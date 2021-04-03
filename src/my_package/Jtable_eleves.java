@@ -80,6 +80,7 @@ public class Jtable_eleves extends JFrame{
             JScrollPane pane = new JScrollPane(table);
             pane.setBounds(0, 25, 1540, 113);
             JFrame f = new JFrame("Liste des etudiants");
+            f.setResizable(false);
             JPanel panel = new JPanel();
             panel.setLayout(null);
             panel.add(pane);

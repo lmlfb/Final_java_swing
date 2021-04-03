@@ -47,6 +47,7 @@ public class ajouterFiliere {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		frame.setLocationRelativeTo(null);
+		frame.setResizable(false);
 		
 		textField = new JTextField();
 		textField.setBounds(57, 64, 232, 19);

@@ -55,6 +55,7 @@ public class Jtable_bac extends JFrame{
             pane.setBounds(39, 49, 305, 260);
             JFrame f = new JFrame("Information des étudiants");
             f.setLocationRelativeTo(null);
+            f.setResizable(false);
 
             JPanel panel = new JPanel();
             panel.setLayout(null);

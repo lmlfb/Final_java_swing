@@ -229,7 +229,7 @@ public class saisir_etudiant {
 		affichage_res.setBounds(413, 176, 334, 270);
 		frame.getContentPane().add(affichage_res);
 		
-		JLabel lblNewLabel_10 = new JLabel("Fili\u00E8re");
+		JLabel lblNewLabel_10 = new JLabel("Filière");
 		lblNewLabel_10.setFont(new Font("Trebuchet MS", Font.PLAIN, 12));
 		lblNewLabel_10.setBounds(444, 49, 45, 13);
 		frame.getContentPane().add(lblNewLabel_10);
@@ -391,7 +391,7 @@ public class saisir_etudiant {
 		lblNewLabel_9.setBounds(51, 298, 45, 13);
 		panel.add(lblNewLabel_9);
 		
-		JLabel lblNewLabel_8 = new JLabel("T\u00E9l\u00E9phone");
+		JLabel lblNewLabel_8 = new JLabel("Téléphone");
 		lblNewLabel_8.setFont(new Font("Trebuchet MS", Font.PLAIN, 12));
 		lblNewLabel_8.setBounds(24, 265, 74, 13);
 		panel.add(lblNewLabel_8);
@@ -420,18 +420,18 @@ public class saisir_etudiant {
 				String str = "";
 				remp_loisir();
 				str+="Nom : " + nom.getText() + "\n";
-				str+="Prï¿½nom : " + prenom.getText() + "\n";
+				str+="Prénom : " + prenom.getText() + "\n";
 				str+="Date naissance : " + date.getText() + "\n";
 				str+="Lieu naissance : " + lieu_naissance.getText() + "\n";
-				str+="Nationalitï¿½ : " + nationalite.getText() + "\n";
+				str+="Nationalité : " + nationalite.getText() + "\n";
 				str+="Rue : " + Rue.getText() + "\n";
 				str+="Code postal : " + CP.getText() + "\n";
 				str+="Ville : " + ville.getText() + "\n";
-				str+="Tï¿½lï¿½phone : " + telephone.getText() + "\n";
+				str+="Téléphone : " + telephone.getText() + "\n";
 				str+="Mail : " + mail.getText() + "\n";
 				str+="Sexe : " + sexe_str + "\n";
 				str+="Loisir : " + LoisirToStr(LoisirArray) + "\n";
-				str+="Filiï¿½re : " +filiere.getSelectedItem().toString() + "\n";
+				str+="Filière : " +filiere.getSelectedItem().toString() + "\n";
 				str+="Niveau : " + niveau.getSelectedItem().toString() + "\n";
 				str+="Bac : " + bac.getSelectedItem().toString() + "\n";
 				

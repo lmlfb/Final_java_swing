@@ -64,7 +64,9 @@ public class menu_window {
 		frame.getContentPane().setLayout(null);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+		frame.setResizable(false);
 		frame.addWindowListener(new WindowAdapter() {
+		
 		    @Override
 		    public void windowClosing(WindowEvent event) {
 		        int retour = showConfirmDialog();
@@ -203,9 +205,22 @@ public class menu_window {
 		menuBar.add(mnNewMenu_3);
 		
 		JMenuItem mntmNewMenuItem_10 = new JMenuItem("Info");
+		mntmNewMenuItem_10.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				info_frame.display();
+			}
+		});
 		mnNewMenu_3.add(mntmNewMenuItem_10);
 		
 		JMenuItem mntmNewMenuItem_9 = new JMenuItem("Quitter");
+		mntmNewMenuItem_9.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(showConfirmDialog() == JOptionPane.YES_OPTION) {
+					frame.dispose();
+				}
+			}
+		});
 		mnNewMenu_3.add(mntmNewMenuItem_9);
 	}
 	

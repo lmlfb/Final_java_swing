@@ -53,7 +53,8 @@ public class Jtable_filiere extends JFrame{
             table.setFont(new Font("Serif", Font.PLAIN, 20));
             JScrollPane pane = new JScrollPane(table);
             pane.setBounds(10, 10, 386, 213);
-            JFrame f = new JFrame("Liste des filieres");
+            JFrame f = new JFrame("Liste des spécialités");
+            f.setResizable(false);
 
 
 
