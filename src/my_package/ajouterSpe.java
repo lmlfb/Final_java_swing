@@ -57,7 +57,7 @@ public class ajouterSpe {
 		JButton btnNewButton = new JButton("Ajouter");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Model_class.InsertFiliere(Model_class.getConnection(), textField.getText());
+				Model_class.InsertSpe(Model_class.getConnection(), textField.getText());
 			}
 		});
 		btnNewButton.setBounds(165, 109, 85, 21);

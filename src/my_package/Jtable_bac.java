@@ -69,12 +69,12 @@ public class Jtable_bac extends JFrame{
             		menu_window.afficher_menu();
             	}
             });
-            btnNewButton.setBounds(253, 319, 93, 21);
+            btnNewButton.setBounds(251, 329, 93, 21);
             panel.add(btnNewButton);
             
-            JLabel lblNewLabel = new JLabel("Liste des fili\u00E8res");
-            lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 13));
-            lblNewLabel.setBounds(122, 10, 162, 29);
+            JLabel lblNewLabel = new JLabel("Liste des sp\u00E9cialit\u00E9s");
+            lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
+            lblNewLabel.setBounds(39, 10, 171, 29);
             panel.add(lblNewLabel);
 
             f.setSize(400, 408);

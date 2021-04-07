@@ -79,7 +79,7 @@ public class Model_class {
 	    
 	        myStmt.executeUpdate();
 	        
-	        alert("La filière a bien été insérée");
+	        alert("La spécialité a bien été insérée");
 	        
 	    }
 	    catch ( SQLException e )
@@ -154,6 +154,54 @@ public class Model_class {
 	    }
 	}
 	
+	public static void supprimerFil(Connection connection, String nomEtu) {
+		
+	 	int i = 0;
+	 
+	    try   {
+	    	
+	    	String query = "DELETE FROM `filiere` WHERE nom = ?";       
+	        PreparedStatement myStmt  = connection.prepareStatement(query); 
+	        
+	        myStmt.setString(1, nomEtu); 
+	    
+	        myStmt.executeUpdate();
+	        
+	        alert("La suppression a bien été effectuée");
+	        
+	    }
+	    catch ( SQLException e )
+	    {
+	      // TODO Auto-generated catch block
+	    	alert("Erreur durant l'insertion, veuillez vérifier votre saisi");
+	      e.printStackTrace();
+	    }
+	}
+	
+	public static void supprimerBac(Connection connection, String nomEtu) {
+		
+	 	int i = 0;
+	 
+	    try   {
+	    	
+	    	String query = "DELETE FROM `bac` WHERE libelle = ?";       
+	        PreparedStatement myStmt  = connection.prepareStatement(query); 
+	        
+	        myStmt.setString(1, nomEtu); 
+	    
+	        myStmt.executeUpdate();
+	        
+	        alert("La suppression a bien été effectuée");
+	        
+	    }
+	    catch ( SQLException e )
+	    {
+	      // TODO Auto-generated catch block
+	    	alert("Erreur durant l'insertion, veuillez vérifier votre saisi");
+	      e.printStackTrace();
+	    }
+	}
+	
 	public static ResultSet ListerEtudiant(Connection connection) {
 		
 		   
@@ -179,8 +227,8 @@ public class Model_class {
 		ResultSet rs = null;
 		
 	    try   {
-	        Statement st = connection.createStatement( ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY );
-	        rs = st.executeQuery( "SELECT idFil, nom FROM filiere" );
+	        Statement st = connection.createStatement();
+	        rs = st.executeQuery( "SELECT * FROM filiere" );
 	        
 	        
 	    }

@@ -156,7 +156,7 @@ public class menu_window {
 		mntmNewMenuItem_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
-				Jtable_filiere jtable_filiere = new Jtable_filiere();
+				Jtable_bac jtable_filiere = new Jtable_bac();
 			}
 		});
 		mnNewMenu_1.add(mntmNewMenuItem_5);
@@ -195,7 +195,7 @@ public class menu_window {
 				affichage_eleve affichage_eleve1 = new affichage_eleve();
 				affichage_eleve1.rempTab(Model_class.ListerEtudiant(Model_class.getConnection()));
 				affichage_eleve1.afficher();/**/
-				Jtable_bac jtable_bac = new Jtable_bac();
+				Jtable_filiere jtable_bac = new Jtable_filiere();
 
 			}
 		});

@@ -70,7 +70,7 @@ public class delete_filiere {
 				int reponse = showConfirmDialog();
 				if (reponse == JOptionPane.YES_OPTION) {
 										
-					Model_class.supprimerEtudiant(Model_class.getConnection(), liste_all.getSelectedItem().toString());
+					Model_class.supprimerFil(Model_class.getConnection(), liste_all.getSelectedItem().toString());
 					frame.dispose();
 					delete_filiere.display();
 					

@@ -102,7 +102,7 @@ public class login_frame {
 		JButton btnNewButton = new JButton("Ok");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(Model_class.Login(Model_class.getConnection(), login_field.getText(), pass_field.getText()) || 1==1) {
+				if(Model_class.Login(Model_class.getConnection(), login_field.getText(), pass_field.getText())) {
 					frame.dispose();
 					menu_window.afficher_menu();
 				}
