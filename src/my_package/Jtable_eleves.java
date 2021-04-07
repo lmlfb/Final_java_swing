@@ -78,10 +78,12 @@ public class Jtable_eleves extends JFrame{
             }
             table.setFont(new Font("Serif", Font.PLAIN, 15));
             JScrollPane pane = new JScrollPane(table);
-            pane.setBounds(0, 25, 1540, 113);
+            pane.setBounds(0, 39, 1540, 140);
             JFrame f = new JFrame("Liste des etudiants");
             f.setResizable(false);
             JPanel panel = new JPanel();
+            panel.setBackground(SystemColor.inactiveCaptionBorder);
+            panel.setForeground(SystemColor.info);
             panel.setLayout(null);
             panel.add(pane);
             f.getContentPane().add(panel);
@@ -93,9 +95,14 @@ public class Jtable_eleves extends JFrame{
             		menu_window.afficher_menu();
             	}
             });
-            btnNewButton.setBounds(1422, 148, 85, 21);
+            btnNewButton.setBounds(1455, 189, 85, 21);
             panel.add(btnNewButton);
-            f.setSize(1554, 219);
+            
+            JLabel lblNewLabel = new JLabel("Liste des \u00E9tudiants");
+            lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 15));
+            lblNewLabel.setBounds(598, 10, 150, 19);
+            panel.add(lblNewLabel);
+            f.setSize(1554, 256);
             //f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             f.setVisible(true);
             f.setLocationRelativeTo(null);

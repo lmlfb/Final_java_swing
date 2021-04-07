@@ -52,14 +52,18 @@ public class Jtable_filiere extends JFrame{
             }
             table.setFont(new Font("Serif", Font.PLAIN, 20));
             JScrollPane pane = new JScrollPane(table);
-            pane.setBounds(10, 10, 386, 213);
+            pane.setBackground(SystemColor.info);
+            pane.setBounds(10, 55, 386, 213);
             JFrame f = new JFrame("Liste des spécialités");
+            f.setTitle("Liste des fili\u00E8res");
             f.setResizable(false);
 
 
 
 
             JPanel panel = new JPanel();
+            panel.setBackground(SystemColor.inactiveCaptionBorder);
+            panel.setForeground(SystemColor.info);
             panel.setLayout(null);
             panel.add(pane);
             f.getContentPane().add(panel);
@@ -71,10 +75,15 @@ public class Jtable_filiere extends JFrame{
             		menu_window.afficher_menu();
             	}
             });
-            btnNewButton.setBounds(311, 241, 85, 21);
+            btnNewButton.setBounds(311, 278, 85, 21);
             panel.add(btnNewButton);
+            
+            JLabel lblNewLabel = new JLabel("Liste des fili\u00E8res");
+            lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 15));
+            lblNewLabel.setBounds(10, 21, 179, 21);
+            panel.add(lblNewLabel);
 
-            f.setSize(426, 311);
+            f.setSize(426, 337);
             //f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             f.setVisible(true);
             f.setLocationRelativeTo(null);
