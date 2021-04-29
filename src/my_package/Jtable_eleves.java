@@ -58,6 +58,10 @@ public class Jtable_eleves extends JFrame{
             TableColumn col = null;
             for (int j = 0; j < nombre_colonne; j++) {
                 col = table.getColumnModel().getColumn(j);
+                
+                if(j==0){
+                	col.setWidth(10);
+                }
  
                 if(j==10){
                 	col.setPreferredWidth(500);
